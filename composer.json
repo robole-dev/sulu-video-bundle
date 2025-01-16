@@ -1,0 +1,42 @@
+{
+  "name": "robole/sulu-video-bundle",
+  "description": "Preview, extract and embed videos in Sulu CMS",
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Robole\\SuluVideoBundle\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "FlxRobole",
+      "email": "felix.saenger@robole.de"
+    }
+  ],
+  "homepage": "https://github.com/robole-dev/sulu-video-bundle",
+  "require": {
+    "php": "^8.2",
+    "sulu/sulu": "^2.5",
+    "symfony/config": "^6.0 | ^7.0",
+    "symfony/dependency-injection": "^6.0 | ^7.0",
+    "symfony/framework-bundle": "^6.0 | ^7.0",
+    "jackalope/jackalope-doctrine-dbal": "*"
+  },
+  "config": {
+    "allow-plugins": {
+      "symfony/flex": true,
+      "php-http/discovery": true
+    },
+    "sort-packages": true
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.66",
+    "phpunit/phpunit": "^11.5"
+  },
+  "scripts": {
+    "phpunit": "@php vendor/bin/phpunit",
+    "php-cs": "@php vendor/bin/php-cs-fixer fix --verbose --diff --dry-run",
+    "php-cs-fix": "@php vendor/bin/php-cs-fixer fix"
+  }
+}

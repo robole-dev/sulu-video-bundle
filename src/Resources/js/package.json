@@ -1,0 +1,16 @@
+{
+  "name": "sulu-video-bundle",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix"
+  },
+  "peerDependencies": {
+    "classnames": "^2.2.5",
+    "mobx": "^4.0.0",
+    "mobx-react": "^5.0.0",
+    "react": "^17.0.0",
+    "sulu-admin-bundle": "*",
+    "sulu-page-bundle": "*"
+  }
+}

@@ -1,0 +1,34 @@
+.prefix {
+  position: relative;
+  padding: 7px 30px 7px 10px;
+  font-size: 12px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  height: 30px;
+}
+
+.inputContainer {
+  display: flex;
+}
+
+.input {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-left: 0 !important;
+}
+
+.iframeWrapper {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <service id="sulu_video_bundle.content.type.video"
+            class="Robole\SuluVideoBundle\Content\Types\Video">
+            <tag name="sulu.content.type" alias="video" />
+            <tag name="sulu.content.export" format="1.2.xliff" translate="true" />
+        </service>
+
+        <service id="sulu_video_bundle.twig_extension"
+            class="Robole\SuluVideoBundle\Twig\VideoTwigExtension">
+            <tag name="twig.extension" />
+        </service>
+    </services>
+</container>
