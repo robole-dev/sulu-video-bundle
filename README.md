@@ -1,4 +1,4 @@
-![GitHub release](https://flat.badgen.net/github/release/robole-dev/SuluVideoBundle)
+![GitHub release](https://flat.badgen.net/github/release/robole-dev/sulu-video-bundle)
 ![Supports Sulu 2.6 or later](https://flat.badgen.net/badge/Sulu/2.6/52B5C9?icon=php)
 
 # SuluVideoBundle
