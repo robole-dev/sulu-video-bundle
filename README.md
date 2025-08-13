@@ -46,7 +46,7 @@ return [
 import "sulu-video-bundle";
 ```
 
-4. Install all npm dependencies and build the admin UI ([see all options](https://docs.sulu.io/en/2.5/cookbook/build-admin-frontend.html):
+4. Install all npm dependencies and build the admin UI ([see all options](https://docs.sulu.io/en/2.5/cookbook/build-admin-frontend.html)):
 
 ```bash
 cd assets/admin
