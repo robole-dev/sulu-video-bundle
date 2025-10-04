@@ -6,7 +6,7 @@ class VideoPreview extends React.Component {
   get videoProvider() {
     const { value } = this.props;
 
-    if (value && (value.includes("youtube") || value.includes("youtube.be"))) {
+    if (value && (value.includes("youtube") || value.includes("youtu.be"))) {
       return "YouTube";
     }
 
