@@ -1,1 +1,0 @@
-{"version":1,"defects":{"Robole\\SuluVideoBundle\\Tests\\VideoTwigExtensionTest::testGetVideoEmbedUrl":7},"times":{"HelloWorldTest::testHelloWorld":0.004,"Robole\\SuluVideoBundle\\Tests\\VideoTwigExtensionTest::testGetVideoEmbedUrl":0.005,"Robole\\SuluVideoBundle\\Tests\\VideoTwigExtensionTest::testGetVideoProvider":0}}
