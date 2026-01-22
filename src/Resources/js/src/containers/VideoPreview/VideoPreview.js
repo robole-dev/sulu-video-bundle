@@ -87,6 +87,12 @@ class VideoPreview extends React.Component {
       embed_url = embed_url.replace("watch?v=", "embed/");
     }
 
+    if (embed_url.includes("shorts/")) {
+      // Shorts don't support "youtube-nocookie.com"
+      embed_url = embed_url.replace("shorts/", "embed/");
+      return embed_url;
+    }
+
     if (embed_url.includes("youtu.be")) {
       embed_url = embed_url.replace("youtu.be", "www.youtube.com/embed");
     }

@@ -36,6 +36,11 @@ class VideoTwigExtensionTest extends TestCase
         $expectedYoutubeUrl = 'https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ?feature=share';
         $this->assertEquals($expectedYoutubeUrl, $extension->getVideoEmbedUrl($youtubeUrl));
 
+        // Test YouTube Short URL
+        $youtubeUrl = 'https://www.youtube.com/shorts/oqoBRGxuemA';
+        $expectedYoutubeUrl = 'https://www.youtube.com/embed/oqoBRGxuemA';
+        $this->assertEquals($expectedYoutubeUrl, $extension->getVideoEmbedUrl($youtubeUrl));
+
         // Test Dailymotion URL
         $dailymotionUrl = 'https://www.dailymotion.com/video/x92td94';
         $expectedDailymotionUrl = 'https://www.dailymotion.com/embed/video/x92td94';

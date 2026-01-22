@@ -44,6 +44,11 @@ class VideoTwigExtension extends AbstractExtension
             $url = str_replace('watch?v=', 'embed/', $url);
         }
 
+        if (false !== strpos($url, 'shorts/')) {
+            // Shorts don't support "youtube-nocookie.com"
+            return str_replace('shorts/', 'embed/', $url);
+        }
+
         if (false !== strpos($url, 'youtube.com')) {
             $url = str_replace('youtube.com', 'youtube-nocookie.com', $url);
         }
