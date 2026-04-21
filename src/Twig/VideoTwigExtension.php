@@ -22,7 +22,7 @@ class VideoTwigExtension extends AbstractExtension
     {
         // Vimeo
         if (false !== strpos($url, 'vimeo.com')) {
-            $url = str_replace('vimeo.com', 'player.vimeo.com/video', $url);
+            $url = str_replace('//vimeo.com', '//player.vimeo.com/video', $url);
             $url .= (false !== strpos($url, '?') ? '&' : '?') . 'dnt=1';
 
             return $url;

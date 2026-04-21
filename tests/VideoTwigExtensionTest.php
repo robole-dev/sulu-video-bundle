@@ -16,6 +16,11 @@ class VideoTwigExtensionTest extends TestCase
         $expectedVimeoUrl = 'https://player.vimeo.com/video/76979871?dnt=1';
         $this->assertEquals($expectedVimeoUrl, $extension->getVideoEmbedUrl($vimeoUrl));
 
+        // Test Vimeo URL with player subdomain
+        $vimeoUrl = 'https://player.vimeo.com/video/76979871';
+        $expectedVimeoUrl = 'https://player.vimeo.com/video/76979871?dnt=1';
+        $this->assertEquals($expectedVimeoUrl, $extension->getVideoEmbedUrl($vimeoUrl));
+
         // Test Vimeo URL with optional params
         $vimeoUrl = 'https://vimeo.com/76979871?param=x';
         $expectedVimeoUrl = 'https://player.vimeo.com/video/76979871?param=x&dnt=1';
@@ -46,7 +51,6 @@ class VideoTwigExtensionTest extends TestCase
         $expectedDailymotionUrl = 'https://www.dailymotion.com/embed/video/x92td94';
         $this->assertEquals($expectedDailymotionUrl, $extension->getVideoEmbedUrl($dailymotionUrl));
     }
-
 
     public function testGetVideoProvider()
     {
