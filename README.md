@@ -8,6 +8,7 @@
 
 ![GitHub release](https://flat.badgen.net/github/release/robole-dev/sulu-video-bundle)
 ![Supports Sulu 2.6 or later](https://flat.badgen.net/badge/Sulu/2.6/52B5C9?icon=php)
+![Supports Sulu 3.0 or later](https://flat.badgen.net/badge/Sulu/3.0/52B5C9?icon=php)
 
 This bundle adds a new content type `video` and provides the Twig functions `video_provider` and `video_embed_url` to embed external videos in an `iframe` or `video` element.
 

@@ -17,7 +17,7 @@
   "homepage": "https://github.com/robole-dev/sulu-video-bundle",
   "require": {
     "php": "^8.2",
-    "sulu/sulu": "^2.5",
+    "sulu/sulu": "^2.5 || ^3.0",
     "symfony/config": "^6.0 | ^7.0",
     "symfony/dependency-injection": "^6.0 | ^7.0",
     "symfony/framework-bundle": "^6.0 | ^7.0",
